@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Scented Candles</title>
+    <style>
+        body {
+  background-color: hsl(82, 32%, 85%)
+}
+
+#header-div {
+  position: fixed;
+  background-color: #b9cb99; 
+  border-style: solid;
+  border-color: #b9cb99;
+  border-width: 15px 15px 15px 22.5px;
+  width: 100%;
+  text-align: center;
+  left: -43px;
+  z-index: 1;
+  top: 0px;
+}
+
+#header {
+  font-size: 30px;
+  color: #bb6b47;
+}
+
+#header-img {
+  width: 50px;
+  height: 35px;
+  position: relative;
+  vertical-align: middle;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  color: #bb6b47;
+}
+
+@media screen and (max-width: 600px) {
+  #nav{
+    width: 100%;
+    flex-direction: column;
+    color: #bb6b47;
+  }
+  
+  iframe {
+    width: 80%;
+  }
+  
+  #flavour {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #flavour-img {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+a:link {
+  color: #606e52;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #bab24a;
+  font-style: italic;
+}
+
+#intro-div {
+  position: relative;
+  top: 120px;
+}
+
+#intro {
+  text-align: center;
+  font-size: 17px;
+}
+
+#video {
+  position: relative;
+  margin: 0 auto;
+}
+
+iframe {
+  display: block;
+  border-style: none;
+}
+
+#about-us {
+  position: relative;
+  text-align: center;
+}
+
+#about-us-header {
+  font-size: 17px;
+}
+
+#pricing {
+  position: relative;
+  top: 215px;
+  font-weight: bold;
+}
+
+#flavour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+
+.flex-item {
+  background-color: #b9cb99;
+  border-style: solid;
+  border-color: #606e52;
+  border-width: 1.8px;
+  width: 300px;
+  height: 250px;
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.flavour-img {
+  position: relative;
+  top: 5px;
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.price {
+  position: relative;
+  top: -13px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#form-div {
+  position: relative;
+  display: block;
+  top: 280px;
+  text-align: center;
+}
+
+#order {
+  font-size: 17px;
+  text-align: center;
+  
+}
+
+#choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container {
+  width: 50px;
+  margin: 10px;
+}
+
+#email {
+  width: 200px;
+}
+
+#bottom {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  display: block;
+  background-color: #b9cb99;
+  bottom: -600px;
+  z-index: 1;
+  right: 1px;
+}
+    </style>
+</head>
+
+<html>
+
+<body>
+    <div id="header-div">
+        <header id="header">Homemade sceneted candles
+            <img id="header-img"
+                src="https://www.thesprucecrafts.com/thmb/7XTvuvpw7PEW7LZLVbtXL_ouXsU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/candlesfinal-5bbe5f3946e0fb0026fec582.jpg"
+                alt="Picture of our homemade candle">
+
+            <nav id="nav-bar">
+                <div class="flex-container" id="nav">
+                    <div><a class="nav-link" href="#about-us">About us</a></div>
+                    <div><a class="nav-link" href="#pricing">Pricing</a></div>
+                    <div><a class="nav-link" href="#form">Form</a></div>
+                </div>
+            </nav>
+
+        </header>
+    </div>
+
+    <main>
+        <br>
+        <div id="intro-div">
+            <h2 id="intro">How we produce our homemade candles</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CrJ9UE6Nihw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <br><br>
+            <div id="about-us">
+                <h2 id="about-us-header">About Us</h2>
+                <p id="paragraph">We are a Family owned and operated business located in Melbourne, Australia. <br>All
+                    our scented candles are homemade with out own hands. <br>We avoided the nasty chemicals that are
+                    abundant in conventional scented candles and stuck with an all natural recipe. <br>Please take your
+                    time and browse through our vast range of scents and designs.
+            </div>
+        </div>
+
+        <div id="pricing">
+            <div class="flex-container" id="flavour">
+                <div id="vanilla" class="flex-item">Classic Vanilla
+                    <img class="flavour-img"
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fheathenherbs.com%2Fwp-content%2Fuploads%2F2020%2F07%2F647-Vanilla-Bean-Fragrance-Oil-240.jpg&f=1&nofb=1"
+                        alt="Vanilla">
+                    <p class="price">$10.99</p>
+                </div>
+                <div id="honey" class="flex-item">Honey
+                    <img class="flavour-img"
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.central-insurance.com%2Fwp-content%2Fuploads%2F2015%2F01%2F146899065.jpg&f=1&nofb=1"
+                        alt="Honey">
+                    <p class="price">$15.99</p>
+                </div>
+                <div id="maple" class="flex-item">Maple
+                    <img class="flavour-img"
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nO6fOJbP37y3hNIyCpKpUwHaE8%26pid%3DApi&f=1"
+                        alt="Maple Syrup">
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="form-div">
+            <h2 id="order">Order Form</h2>
+
+            <div id="choice">
+                <label for="vanilla-choice" class="container">Classic Vanilla
+                    <input id="vanilla-choice" name="order-check" value="vanilla" type="checkbox" checked="checked">
+                    <span class="checkmark">
+                    </span>
+                </label>
+
+                <label for="honey-choice" class="container">Honey
+                    <input id="honey-choice" name="order-check" value="honey" type="checkbox">
+                    <span class="checkmark">
+                    </span>
+                </label>
+
+                <label for="maple-choice" class="container">Maple
+                    <input id="maple-choice" name="order-check" value="maple" type="checkbox">
+                    <span class="checkmark">
+                    </span>
+                </label>
+            </div>
+
+            <label for="email">We'll send you a prersonalised external order link via email</label>
+            <br>
+            <br>
+            <form id="form" action="https://www.freecodecamp.com/email-submit)">
+                <input type="email" id="email" name="email" placeholder="John-Smith@gmail.com">
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </main>
+    <div id="bottom">
+
+    </div>
+</body>
+
+</html>
